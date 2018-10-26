@@ -1,7 +1,35 @@
 ### Simple Rest Api in GO
-0. `export PROJECT_NAME=restApi`
-1. Git Clone `repo` $PROJECT_NAME
-2. cd `repo`
-3. `go get github.com/gorilla/mux`
-4. `go build`
-5. `./$PROJECT_NAME`
+
+``` shell
+
+export PROJECT_NAME=restApi
+
+# Git Clone 
+https://github.com/AlaminMahamud/rest-api-go $PROJECT_NAME
+
+cd $PROJECT_NAME
+
+# Installing Router
+go get github.com/gorilla/mux
+
+go build
+./$PROJECT_NAME
+
+```
+
+Now go to your API Client [e.g. browser / postman / advanced rest client]. and fire the endpoints.
+1. GET  `localhost:8000/people`
+2. GET  `localhost:8000/people/1`
+3. POST `localhost:8000/people/4`
+
+``` json
+{
+  "firstname": "Alamin",
+  "lastname": "Mahamud",
+  "address": {
+    "city": "City X",
+    "state": "State X"
+  }
+}
+```
+and so on...
