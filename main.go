@@ -4,7 +4,7 @@ import (
 	"log"
 	"net/http"
 
-	"github.com/alaminmahamud/restApi/api"
+	"github.com/alamin-mahamud/rest-api-go/v1/api"
 )
 
 func main() {
