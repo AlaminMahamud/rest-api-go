@@ -1,13 +1,19 @@
 package main
 
 import (
-	"log"
-	"net/http"
+	"fmt"
+	"os"
 
-	"github.com/alamin-mahamud/rest-api-go/v1/api"
+	"github.com/alamin-mahamud/rest-api-go/v2/services"
 )
 
+var appName = "accountservice"
+
 func main() {
-	router := api.New()
-	log.Fatal(http.ListenAndServe(":8000", router))
+	port := os.Getenv("port")
+	if port == "" {
+		port = "8080"
+	}
+	fmt.Printf("Starting %s\n", appName)
+	service.StartWebServer(port)
 }
