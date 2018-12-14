@@ -2,9 +2,10 @@ package main
 
 import (
 	"fmt"
+	_ "net/http/pprof"
 	"os"
 
-	"github.com/alamin-mahamud/rest-api-go/v2/services"
+	"github.com/alamin-mahamud/rest-api-go/v3/services"
 )
 
 var appName = "accountservice"
